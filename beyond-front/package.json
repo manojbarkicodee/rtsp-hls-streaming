@@ -1,0 +1,52 @@
+{
+  "name": "beyond-front",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "npm run set-env && ng serve",
+    "build": "npm run set-env && ng build",
+    "build:prod": "npm run set-env && ng build --configuration=production",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "set-env": "ts-node set-env.ts"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^14.2.0",
+    "@angular/common": "^14.2.0",
+    "@angular/compiler": "^14.2.0",
+    "@angular/core": "^14.2.0",
+    "@angular/forms": "^14.2.0",
+    "@angular/platform-browser": "^14.2.0",
+    "@angular/platform-browser-dynamic": "^14.2.0",
+    "@angular/router": "^14.2.0",
+    "@ffmpeg/core": "^0.12.6",
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "bootstrap": "^5.3.3",
+    "fs": "^0.0.1-security",
+    "hls.js": "^1.5.14",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "video.js": "^8.17.2",
+    "vlc-simple-player": "^0.5.1",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.13",
+    "@angular/cli": "~14.2.13",
+    "@angular/compiler-cli": "^14.2.0",
+    "@types/jasmine": "~4.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "dotenv-webpack": "^8.1.0",
+    "jasmine-core": "~4.3.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~4.7.2",
+    "webpack-merge": "^6.0.1"
+  }
+}

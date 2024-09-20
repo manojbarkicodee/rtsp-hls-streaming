@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore FFmpeg logs
+*.log
+ffmpeg-*.log
+
+# Ignore HLS stream files
+*.m3u8
+# *.ts
+hls/

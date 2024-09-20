@@ -1,0 +1,17 @@
+# Ignore HLS segments
+hls/
+
+# Ignore Node modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore Dockerfile itself
+Dockerfile
+
+# Ignore Dockerignore file itself
+.dockerignore
+
+# Ignore other temporary files
+*.tmp

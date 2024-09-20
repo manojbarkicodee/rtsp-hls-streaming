@@ -1,0 +1,26 @@
+version: '3'
+services:
+  beyondone-backend:
+    image: beyondone/beyondone-backend
+    container_name: beyondone-backend
+    ports:
+      - '3000:3000'
+    networks:
+      - beyondone-network
+    restart: unless-stopped  
+  beyondone-frontend:
+    image: beyondone/beyondone-frontend
+    container_name: beyondone-frontend
+    ports:
+      - '8080:80'
+    environment:
+      - NODE_ENV=production
+    networks:
+      - beyondone-network
+    depends_on:
+      - beyondone-backend
+    restart: unless-stopped
+networks:
+  beyondone-network:
+      name: beyondone-network
+      driver: bridge
